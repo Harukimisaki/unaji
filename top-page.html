@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>うなじ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="master.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div id="ranking-list">
+
+      <template id="ranking-list-template">
+        <div id="ranking-list-item">
+          <a href="#"><!--　対象ユーザーのURLを取得 -->
+            <div class="ranking-list-item__ranking">
+              <p class="ranking-list-item__ranking__number"></p><!-- 順位を取得 -->
+            </div>
+            <div class="ranking-list-item__image">
+              <img src="img/ranking-list-item__img.jpeg" alt=""><!-- 対象ユーザーのトップ画像を取得 -->
+            </div>
+            <h3 class="ranking-list-item__name"></h3><!-- 対象ユーザーの名前を取得 -->
+          </a>
+        </div><!-- 各ランキング これを10回繰り返す-->
+      </template>
+
+      <div class="ranking-list-item__view-more">
+        <a href="#">もっと見る</a>
+      </div><!-- 各ランキング これを10回繰り返す-->
+
+    </div>
+  </div>
+
+
+
+<script src="master.js"></script>
+<script src="jquery.js"></script>
+</body>
+</html>
